@@ -3,8 +3,7 @@
   dockerfile: git
   build_args:
       github: hyperledger/besu
-      tag: 4844-devnet-5b
-      # TODO: Add devnet-6 ready branch
+      tag: develop
 
 - client: erigon
   nametag: 4844-git
