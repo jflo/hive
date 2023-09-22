@@ -1,0 +1,6 @@
+- client: besu
+  nametag: main
+  build_args:
+      baseimage: hyperledger/besu
+      tag: 23.7.4-SNAPSHOT-openjdk-17
+
