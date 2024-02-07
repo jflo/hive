@@ -8,10 +8,10 @@ RUN apk add --no-cache jq
 COPY genesis.json /genesis.json
 #TODO: check env var for mapper to use 
 COPY mapper.jq /mapper.jq
+COPY version.txt /version.txt
 
 
 CMD ["sh", "-c", "\
-     socat -V > /version.txt & \
      jq -f /mapper.jq /genesis.json > /besugenesis.json; \
      cat /besugenesis.json; \
      socat -v TCP-LISTEN:8545,fork TCP:host.docker.internal:8545 & \
