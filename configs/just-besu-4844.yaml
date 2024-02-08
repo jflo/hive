@@ -1,0 +1,5 @@
+- client: besu
+  nametag: local 
+  build_args:
+      base_image: hyperledger/besu
+      tag: 24.1.2-SNAPSHOT-openjdk-17-debug
